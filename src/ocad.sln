@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCAD.Core", "OCAD.Core\OCAD.Core.csproj", "{1F9BAFA3-D052-4730-8C9A-5CE56A57FD92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCAD.MongoDB", "OCAD.MongoDB\OCAD.MongoDB.csproj", "{99C88A5D-AF93-466E-8B9B-886130404774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCAD.EF", "OCAD.EF\OCAD.EF.csproj", "{14123D45-B588-46A1-8A72-44437D0A6CDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F9BAFA3-D052-4730-8C9A-5CE56A57FD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9BAFA3-D052-4730-8C9A-5CE56A57FD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9BAFA3-D052-4730-8C9A-5CE56A57FD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9BAFA3-D052-4730-8C9A-5CE56A57FD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C88A5D-AF93-466E-8B9B-886130404774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C88A5D-AF93-466E-8B9B-886130404774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C88A5D-AF93-466E-8B9B-886130404774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C88A5D-AF93-466E-8B9B-886130404774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

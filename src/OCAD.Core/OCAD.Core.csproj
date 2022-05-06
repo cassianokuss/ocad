@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>OCAD.Core</PackageId>
+    <Version>0.0.5</Version>
+    <Authors>Cassiano Kuss</Authors>
+    <Company>K3</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+</Project>
