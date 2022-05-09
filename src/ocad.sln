@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCAD.MongoDB", "OCAD.MongoD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCAD.EF", "OCAD.EF\OCAD.EF.csproj", "{14123D45-B588-46A1-8A72-44437D0A6CDF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exemplos", "exemplos", "{2C7DCE6E-7128-43EB-84E5-CC9C8A443A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ef", "exemplos\ef\ef.csproj", "{2C0D0287-AC09-420B-98F4-3E3CAD70A24D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14123D45-B588-46A1-8A72-44437D0A6CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0D0287-AC09-420B-98F4-3E3CAD70A24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0D0287-AC09-420B-98F4-3E3CAD70A24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0D0287-AC09-420B-98F4-3E3CAD70A24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0D0287-AC09-420B-98F4-3E3CAD70A24D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C0D0287-AC09-420B-98F4-3E3CAD70A24D} = {2C7DCE6E-7128-43EB-84E5-CC9C8A443A65}
 	EndGlobalSection
 EndGlobal

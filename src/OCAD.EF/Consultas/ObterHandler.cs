@@ -1,6 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using OCAD.Core;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace OCAD.EF.Consultas;
 

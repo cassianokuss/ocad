@@ -15,7 +15,7 @@ public class InserirHandler<T> : AsyncRequestHandler<Inserir<T>> where T : class
 
     protected override Task Handle(Inserir<T> request, CancellationToken cancellationToken)
     {
-        _dbContext.Set<T>().Attach(request.Objeto);
+        _dbContext.Set<T>().Add(request.Objeto);
         return _dbContext.SaveChangesAsync();
     }
 }
