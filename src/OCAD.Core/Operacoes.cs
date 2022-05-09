@@ -6,12 +6,12 @@ namespace OCAD.Core;
 /// <summary>
 /// Obtem o primeiro objeto T da query. 
 /// </summary>
-public record Obter<T>(Func<IQueryable<T>, IQueryable<T>> Builder) : IRequest<T>;
+public record Obter<T>(Func<IQueryable<T>, IQueryable<T>> Builder) : IRequest<T?>;
 
 /// <summary>
 /// Obtem o primeiro objeto TResult da query. 
 /// </summary>
-public record Obter<T, TResult>(Func<IQueryable<T>, IQueryable<TResult>> Builder) : IRequest<TResult>;
+public record Obter<T, TResult>(Func<IQueryable<T>, IQueryable<TResult>> Builder) : IRequest<TResult?>;
 
 /// <summary>
 /// Lista os objetos T da query. 
