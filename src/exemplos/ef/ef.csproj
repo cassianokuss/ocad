@@ -15,7 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\OCAD.Core\OCAD.Core.csproj" />
     <ProjectReference Include="..\..\OCAD.EF\OCAD.EF.csproj" />
-    <ProjectReference Include="..\core\core.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 
 </Project>
