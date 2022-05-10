@@ -6,7 +6,7 @@ O Objetivo desse projeto é proporcionar acesso e manipulação de dados de form
 
 A principal vantagem desse técnica é a dependência somente de IMediator facilitando testes e mocks.
 
-[Exemplos](https://github.com/cassianokuss/ocad/tree/main/src/exemplos) de utilização com MongoDB e Entity Framework.
+[Exemplos](https://github.com/cassianokuss/ocad/tree/main/src/exemplos) de utilização com [MongoDB](https://www.mongodb.com) e [Entity Framework](https://github.com/dotnet/efcore).
 
 ## Como usar
 
