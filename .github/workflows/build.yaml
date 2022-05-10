@@ -1,4 +1,4 @@
-name: build and test
+name: build
 on:
   push:
   pull_request:
@@ -9,7 +9,7 @@ env:
   DOTNET_VERSION: '6.0.x'
 jobs:
   build:
-    name: build-and-test-${{matrix.os}}
+    name: build-${{matrix.os}}
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
