@@ -1,7 +1,7 @@
-using exemplos.ef.Models;
+using Exemplos.Core;
 using Microsoft.EntityFrameworkCore;
 
-namespace exemplos.ef;
+namespace Exemplos.EF;
 
 public class GestaoUsuarioContext : DbContext
 {

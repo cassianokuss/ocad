@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using exemplos.ef.Models;
+using Exemplos.Core;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +9,7 @@ using OCAD.EF.Consultas;
 using SimpleInjector;
 using SimpleInjector.Lifestyles;
 
-namespace exemplos.ef;
+namespace Exemplos.EF;
 
 public static class Program
 {

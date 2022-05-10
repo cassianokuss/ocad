@@ -1,4 +1,6 @@
-namespace exemplos.ef.Models;
+using System.Collections.Generic;
+
+namespace Exemplos.Core;
 
 public class Usuario
 {

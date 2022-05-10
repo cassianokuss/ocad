@@ -1,4 +1,4 @@
-namespace exemplos.ef.Models;
+namespace Exemplos.Core;
 
 public class Perfil
 {
