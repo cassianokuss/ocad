@@ -1,6 +1,6 @@
 # OCAD - Outra (mais uma) camada de acesso a dados.
 
-[Build](https://github.com/cassianokuss/ocad/actions/workflows/build.yaml/badge.svg)
+![Build](https://github.com/cassianokuss/ocad/actions/workflows/build.yaml/badge.svg)
 
 
 Uma forma simples de acesso a dados usando [MediatR](https://github.com/jbogard/MediatR) e [SimpleInjector](https://github.com/simpleinjector/SimpleInjector).
