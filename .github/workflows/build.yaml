@@ -9,7 +9,7 @@ env:
   DOTNET_VERSION: '6.0.x'
 jobs:
   build:
-    name: build-${{matrix.os}}
+    name: build
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
