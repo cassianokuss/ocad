@@ -1,5 +1,8 @@
 # OCAD - Outra (mais uma) camada de acesso a dados.
 
+[Build](https://github.com/cassianokuss/ocad/actions/workflows/build.yaml/badge.svg)
+
+
 Uma forma simples de acesso a dados usando [MediatR](https://github.com/jbogard/MediatR) e [SimpleInjector](https://github.com/simpleinjector/SimpleInjector).
 
 O Objetivo desse projeto é proporcionar acesso e manipulação de dados de forma simples e genérica usando MediatR. A recomendação é que seja usado em consultas simples que não demandam de otimização. Em casos mais complexos deve-se criar uma query específica.
