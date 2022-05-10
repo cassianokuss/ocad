@@ -17,8 +17,8 @@ public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T : cl
     public Task<List<T>> Handle(Listar<T> request, CancellationToken cancellationToken)
     {
         var options = new AggregateOptions { AllowDiskUse = true };
-        var query = request.Builder(_collection.AsQueryable(options));
-        return (query as IMongoQueryable<T>).ToListAsync(cancellationToken);
+        var query = request.Builder(_collection.AsQueryable(options)) as IMongoQueryable<T>;
+        return query.ToListAsync(cancellationToken);
     }
 }
 
@@ -34,7 +34,7 @@ public class ListarHandler<T, TResult> : IRequestHandler<Listar<T, TResult>, Lis
     public Task<List<TResult>> Handle(Listar<T, TResult> request, CancellationToken cancellationToken)
     {
         var options = new AggregateOptions { AllowDiskUse = true };
-        var query = request.Builder(_collection.AsQueryable(options));
-        return (query as IMongoQueryable<TResult>).ToListAsync(cancellationToken);
+        var query = request.Builder(_collection.AsQueryable(options)) as IMongoQueryable<TResult>;
+        return query.ToListAsync(cancellationToken);
     }
 }

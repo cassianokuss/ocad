@@ -22,6 +22,7 @@ public static class Program
         using (AsyncScopedLifestyle.BeginScope(container))
         {
             var mediator = container.GetInstance<IMediator>();
+            
             await mediator.Send(new Inserir<Perfil>(new Perfil { Id = 1, Nome = "Perfil 1" }));
             var perfil = await mediator.Send(new Obter<Perfil>(e => e.Where(x => x.Id == 1)));
 
@@ -31,6 +32,7 @@ public static class Program
             if (perfil == null || pessoa == null) throw new Exception();
 
             await mediator.Send(new Inserir<Usuario>(new Usuario { Id = 1, Login = "12345", Pessoa = pessoa, Perfis = new List<Perfil> { perfil } }));
+            
             var usuario = await mediator.Send(new Obter<Usuario>(e => e
                 .Where(x => x.Id == 1)
                 .Include(x => x.Pessoa)
@@ -58,7 +60,7 @@ public static class Program
                .UseInMemoryDatabase(databaseName: "Test")
                .Options;
             return new GestaoUsuarioContext(options);
-        }, Lifestyle.Singleton);
+        }, Lifestyle.Scoped);
 
         container.RegisterSingleton<IMediator, Mediator>();
         container.Register(typeof(IRequestHandler<>), assemblies, Lifestyle.Scoped);
