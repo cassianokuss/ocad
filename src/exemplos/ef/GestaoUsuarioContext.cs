@@ -9,9 +9,9 @@ public class GestaoUsuarioContext : DbContext
         : base(options)
     { }
 
-    public DbSet<Usuario> Usuarios { get; set; }
-    public DbSet<Perfil> Perfis { get; set; }
-    public DbSet<Pessoa> Pessoas { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; } = null!;
+    public DbSet<Perfil> Perfis { get; set; } = null!;
+    public DbSet<Pessoa> Pessoas { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
