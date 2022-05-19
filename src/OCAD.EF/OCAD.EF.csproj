@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>OCAD.EF</PackageId>
-    <Version>0.0.5</Version>
+    <Version>0.0.1</Version>
     <Authors>Cassiano Kuss</Authors>
     <Company>K3</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

@@ -4,6 +4,22 @@ using MediatR;
 
 namespace OCAD.EF.Consultas;
 
+public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T : class, new()
+{
+    private readonly DbContext _dbContext;
+
+    public ExisteHandler(DbContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
+    public Task<bool> Handle(Existe<T> request, CancellationToken cancellationToken)
+    {
+        var query = request.Builder(_dbContext.Set<T>().AsQueryable());
+        return query.AnyAsync(cancellationToken);
+    }
+}
+
 public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T : class, new()
 {
     private readonly DbContext _dbContext;

@@ -8,6 +8,7 @@ public static class ContainerExtension
 {
     public static Container RegistrarHandlers(this Container container)
     {
+        container.Register(typeof(IRequestHandler<,>), typeof(ExisteHandler<>), Lifestyle.Scoped);
         container.Register(typeof(IRequestHandler<,>), typeof(ObterHandler<>), Lifestyle.Scoped);
         container.Register(typeof(IRequestHandler<,>), typeof(ObterHandler<,>), Lifestyle.Scoped);
         container.Register(typeof(IRequestHandler<,>), typeof(ListarHandler<>), Lifestyle.Scoped);

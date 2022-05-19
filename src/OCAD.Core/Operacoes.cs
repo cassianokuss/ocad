@@ -6,6 +6,11 @@ namespace OCAD.Core;
 /// <summary>
 /// Obtem o primeiro objeto T da query. 
 /// </summary>
+public record Existe<T>(Func<IQueryable<T>, IQueryable<T>> Builder) : IRequest<bool>;
+
+/// <summary>
+/// Obtem o primeiro objeto T da query. 
+/// </summary>
 public record Obter<T>(Func<IQueryable<T>, IQueryable<T>> Builder) : IRequest<T?>;
 
 /// <summary>
