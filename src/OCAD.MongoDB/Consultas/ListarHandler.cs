@@ -5,7 +5,7 @@ using MongoDB.Driver.Linq;
 
 namespace OCAD.MongoDB.Consultas;
 
-public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T : class, new()
+public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T : new()
 {
     private readonly IMongoCollection<T> _collection;
 
@@ -22,7 +22,7 @@ public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T : cl
     }
 }
 
-public class ListarHandler<T, TResult> : IRequestHandler<Listar<T, TResult>, List<TResult>> where T : class, new()
+public class ListarHandler<T, TResult> : IRequestHandler<Listar<T, TResult>, List<TResult>> where T : new()
 {
     private readonly IMongoCollection<T> _collection;
 

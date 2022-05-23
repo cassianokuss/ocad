@@ -4,7 +4,7 @@ using MediatR;
 
 namespace OCAD.EF.Comandos;
 
-public class SalvarOuAtualizarHandler<T> : AsyncRequestHandler<SalvarOuAtualizar<T>> where T : class, new()
+public class SalvarOuAtualizarHandler<T> : AsyncRequestHandler<SalvarOuAtualizar<T>> where T : new()
 {
     private readonly DbContext _dbContext;
 

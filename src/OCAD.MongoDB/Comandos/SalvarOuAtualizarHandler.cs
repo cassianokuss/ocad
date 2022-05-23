@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace OCAD.MongoDB.Comandos;
 
-public class SalvarOuAtualizarHandler<T> : AsyncRequestHandler<SalvarOuAtualizar<T>> where T : class, new()
+public class SalvarOuAtualizarHandler<T> : AsyncRequestHandler<SalvarOuAtualizar<T>> where T : new()
 {
     private readonly IMongoCollection<T> _collection;
 

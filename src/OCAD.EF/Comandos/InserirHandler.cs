@@ -4,7 +4,7 @@ using MediatR;
 
 namespace OCAD.EF.Comandos;
 
-public class InserirHandler<T> : AsyncRequestHandler<Inserir<T>> where T : class, new()
+public class InserirHandler<T> : AsyncRequestHandler<Inserir<T>> where T : new()
 {
     private readonly DbContext _dbContext;
 

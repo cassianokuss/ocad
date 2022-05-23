@@ -4,7 +4,7 @@ using MediatR;
 
 namespace OCAD.EF.Consultas;
 
-public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T : class, new()
+public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T : new()
 {
     private readonly DbContext _dbContext;
 
@@ -20,7 +20,7 @@ public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T : class
     }
 }
 
-public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T : class, new()
+public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T : new()
 {
     private readonly DbContext _dbContext;
 
@@ -36,7 +36,7 @@ public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T : class, ne
     }
 }
 
-public class ObterHandler<T, TResult> : IRequestHandler<Obter<T, TResult>, TResult?> where T : class, new()
+public class ObterHandler<T, TResult> : IRequestHandler<Obter<T, TResult>, TResult?> where T : new()
 {
     private readonly DbContext _dbContext;
 

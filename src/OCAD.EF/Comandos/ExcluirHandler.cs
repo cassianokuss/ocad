@@ -4,7 +4,7 @@ using MediatR;
 
 namespace OCAD.EF.Comandos;
 
-public class ExcluirHandler<T> : AsyncRequestHandler<Excluir<T>> where T : class, new()
+public class ExcluirHandler<T> : AsyncRequestHandler<Excluir<T>> where T : new()
 {
     private readonly DbContext _dbContext;
 
