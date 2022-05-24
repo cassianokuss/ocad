@@ -4,7 +4,7 @@ using MediatR;
 
 namespace OCAD.EF.Consultas;
 
-public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T : new()
+public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T: class, new()
 {
     private readonly DbContext _dbContext;
 
@@ -20,7 +20,7 @@ public class ListarHandler<T> : IRequestHandler<Listar<T>, List<T>> where T : ne
     }
 }
 
-public class ListarHandler<T, TResult> : IRequestHandler<Listar<T, TResult>, List<TResult>> where T : new()
+public class ListarHandler<T, TResult> : IRequestHandler<Listar<T, TResult>, List<TResult>> where T: class, new()
 {
     private readonly DbContext _dbContext;
 

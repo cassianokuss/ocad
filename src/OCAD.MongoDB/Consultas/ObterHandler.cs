@@ -5,7 +5,7 @@ using MongoDB.Driver.Linq;
 
 namespace OCAD.MongoDB.Consultas;
 
-public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T : new()
+public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T: class, new()
 {
     private readonly IMongoCollection<T> _collection;
 
@@ -22,7 +22,7 @@ public class ExisteHandler<T> : IRequestHandler<Existe<T>, bool> where T : new()
     }
 }
 
-public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T : new()
+public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T: class, new()
 {
     private readonly IMongoCollection<T> _collection;
 
@@ -39,7 +39,7 @@ public class ObterHandler<T> : IRequestHandler<Obter<T>, T?> where T : new()
     }
 }
 
-public class ObterHandler<T, TResult> : IRequestHandler<Obter<T, TResult>, TResult?> where T : new()
+public class ObterHandler<T, TResult> : IRequestHandler<Obter<T, TResult>, TResult?> where T: class, new()
 {
     private readonly IMongoCollection<T> _collection;
 

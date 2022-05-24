@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace OCAD.MongoDB.Comandos;
 
-public class ExcluirHandler<T> : AsyncRequestHandler<Excluir<T>> where T : new()
+public class ExcluirHandler<T> : AsyncRequestHandler<Excluir<T>> where T: class, new()
 {
     private readonly IMongoCollection<T> _collection;
 

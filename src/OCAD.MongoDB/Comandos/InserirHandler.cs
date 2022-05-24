@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace OCAD.MongoDB.Comandos;
 
-public class InserirHandler<T> : AsyncRequestHandler<Inserir<T>> where T : new()
+public class InserirHandler<T> : AsyncRequestHandler<Inserir<T>> where T: class, new()
 {
     private readonly IMongoCollection<T> _collection;
 
